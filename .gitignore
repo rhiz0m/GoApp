@@ -1,0 +1,49 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Vendor directory (remove the leading slash if you'd like to track it in your repository)
+vendor/
+
+# Go workspace file
+go.work
+
+# Go module files
+go.sum
+
+# Directories for build artifacts
+bin/
+build/
+
+# Logs
+*.log
+
+# IDE/editor specific files
+.idea/
+*.iml
+.vscode/
+*.swp
+*~
+
+# System specific files
+.DS_Store
+Thumbs.db
+
+# GoLand project files
+.godir
+
+# Test result files
+*.coverprofile
+*.cov
+*.cover.out
+*.profile
+*.prof
+
+# Go modules directory
+/pkg/
