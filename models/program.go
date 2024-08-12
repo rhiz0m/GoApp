@@ -1,4 +1,4 @@
-package programs
+package models
 
 import "time"
 
@@ -14,4 +14,8 @@ var programs = []Program{}
 
 func (p Program) Save() {
 programs = append(programs, p)
+}
+
+func GetPrograms() []Program {
+	return programs
 }

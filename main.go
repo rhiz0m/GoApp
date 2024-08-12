@@ -1,6 +1,7 @@
 package main
 
 import (
+	"FirstGo/models"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -15,8 +16,6 @@ server.GET("/programs", getExercises)
 }
 
 func getExercises(context *gin.Context) {
-	context.JSON(http.StatusOK, gin.H { 
-		"Strong Man": []string{"Atlas Stones, Deadlift, Other"},
-		"Powerlifting": []string{"Bench Press, Back Squat, Deadlift"},
-		"Grip Strength": "Blob"})
+	programs := models.GetPrograms()
+	context.JSON(http.StatusOK, programs)
 }
